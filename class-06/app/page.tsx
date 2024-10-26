@@ -4,7 +4,7 @@ import Grid from "./components/Grid";
 export default function Home() {
   return (
     <div>
-      {/* <Forms/> */}
+      <Forms/>
       <Grid/>
     </div>
   );
