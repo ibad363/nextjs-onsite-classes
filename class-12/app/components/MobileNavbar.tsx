@@ -11,14 +11,15 @@ import {
 
 const MobileNavbar = () => {
     return (
-        <div className="p-4 bg-slate-500/80 text-right">
+        <div className="p-4 bg-slate-500/80 flex justify-between">
+            <div className='text-lg'>Logo</div>
             <Sheet>
                 <SheetTrigger><Menu/></SheetTrigger>
-                <SheetContent className="w-[15rem]">
+                <SheetContent side={"left"} className="w-[15rem]">
                     <SheetHeader>
                         <SheetTitle></SheetTitle>
                         <SheetDescription>
-                            <ul className="flex flex-col gap-4 text-lg text-gray-700">
+                            <ul className="flex flex-col gap-4 text-lg text-gray-700 mt-5">
                                 <li><a href="">Home</a></li>
                                 <li><a href="">About</a></li>
                                 <li><a href="">Contact</a></li>
