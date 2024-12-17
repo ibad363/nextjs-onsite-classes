@@ -3,6 +3,7 @@ import Link from "next/link"
 const Books = async () => {
   const data = await fetch("https://simple-books-api.glitch.me/books")
   const response = await data.json()
+  console.log(response)
 
   return (
     <div className="grid justify-center p-8 gap-4 font-[family-name:var(--font-geist-sans)]">
@@ -17,6 +18,7 @@ const Books = async () => {
           </div>
         ))}
         </ol>
+        {/* {JSON.stringify(response)} */}
     </div>
   )
 }
