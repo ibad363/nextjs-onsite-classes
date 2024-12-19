@@ -1,5 +1,5 @@
 
-async function Album({params}: {params: {id:string}}) {
+async function Album({params}: {params: {id:number}}) {
     const data = await fetch(`https://jsonplaceholder.typicode.com/albums/${params.id}`)
     const res = await data.json() 
     console.log(res)
