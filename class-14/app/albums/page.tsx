@@ -8,7 +8,8 @@ const Albums = async () => {
         <h1 className="text-2xl text-center">All Albums</h1>
         <ol className="list-decimal space-y-2">
           {res.map((album: {id: number, userId: number, title: string}) => (
-            <li key={album.id}><Link className="hover:border-b border-black" href={`/albums/${album.id}`}>{album.title}</Link></li>
+            <li key={album.id}><Link className="hover:border-b border-black"
+             href={`/albums/${album.id}`}>{album.title}</Link></li>
           ))}
         </ol>
     </div>

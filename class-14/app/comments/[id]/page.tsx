@@ -1,5 +1,6 @@
 const Comment = async ({params} : {params :{id :string}}) => {
-    const data = await fetch(`https://jsonplaceholder.typicode.com/comments/${params.id}`)
+  const {id} = await params
+    const data = await fetch(`https://jsonplaceholder.typicode.com/comments/${id}`)
     const res = await data.json()
   return (
     <div className="p-4 pt-12 text-3xl space-y-3 max-w-4xl mx-auto">

@@ -1,5 +1,6 @@
 const Book = async ({params}:{params: {id:string}}) => {
-    const data = await fetch(`https://simple-books-api.glitch.me/books/${params.id}`)
+  const {id} = await params
+    const data = await fetch(`https://simple-books-api.glitch.me/books/${id}`)
     const response = await data.json()
 
   return (
