@@ -1,5 +1,5 @@
-const Book = async (props:any) => {
-  const {id} = await props.params
+const Book = async ({params}:{params: {id:string}}) => {
+  const {id} = await params
     const data = await fetch(`https://simple-books-api.glitch.me/books/${id}`)
     const response = await data.json()
 
