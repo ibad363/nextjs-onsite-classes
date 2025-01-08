@@ -6,10 +6,10 @@ export default async function Home() {
   const res = await url.json()
   console.log(res)
   return (
-    <div className="grid items-center justify-items-center min-h-screen p-8  gap-16 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex items-center justify-center min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Form/>
       {res.map((product : any)=> (
-        <h1>{product}</h1>
+        <li>{product.productName}</li>
       ))}
     </div>
   );

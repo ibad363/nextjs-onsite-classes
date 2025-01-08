@@ -12,7 +12,7 @@ const Form = () => {
         const url = await fetch("/api/hello",{
             method: "POST",
             headers: {"Content-Type" : "application/json"},
-            body: JSON.stringify(product)
+            body: JSON.stringify({productName: product})
         })
         setProduct("")
         router.refresh()
